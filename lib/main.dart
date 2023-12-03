@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sber/Palette.dart';
+import 'package:flutter_sber/PageBody.dart';
+import 'package:flutter_sber/PageHeader.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
         title: 'App',
         theme: ThemeData(
           useMaterial3: true,
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
+          colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primary)
         ),
         home: MyHomePage(),
       ),
@@ -31,15 +33,19 @@ class MyAppState extends ChangeNotifier {
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var appState = context.watch<MyAppState>();
 
-    return Scaffold(
+    return const Scaffold(
       body: Center(
         child: Column(
           children: [
-
+            SizedBox(height: 44),
+            PageHeader(),
+            SizedBox(height: 14),
+            Expanded(
+              child: PageBody()
+            )
           ],
-        ),
+        )
       ),
     );
   }
