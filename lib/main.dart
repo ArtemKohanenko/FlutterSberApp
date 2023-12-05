@@ -35,18 +35,25 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return const Scaffold(
-      body: Center(
-        child: Column(
-          children: [
-            SizedBox(height: 44),
-            PageHeader(),
-            SizedBox(height: 14),
-            Expanded(
-              child: PageBody()
-            )
-          ],
-        )
-      ),
+          body: SingleChildScrollView(
+            child: SizedBox(
+              width: 4000,
+              height: 4000,
+              child: Center(
+                child: Column(
+                  children: [
+                    SizedBox(height: 44),
+                    PageHeader(),
+                    SizedBox(height: 14),
+                    Expanded(
+                      child: PageBody()
+                    )
+                  ],
+                ),
+              ),
+            ),
+          ),
+      
     );
   }
 }

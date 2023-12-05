@@ -27,3 +27,12 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+  fonts:
+    - family: SF Pro
+      fonts:
+        - asset: fonts/SFPRODISPLAYREGULAR.OTF
+        - asset: fonts/SFPRODISPLAYMEDIUM.OTF
+          weight: 500
+        - asset: fonts/SFPRODISPLAYBOLD.OTF
+          weight: 700
+
