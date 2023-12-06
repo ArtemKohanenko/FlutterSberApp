@@ -5,11 +5,13 @@ class AppColors {
   static const Color icons = Color.fromRGBO(8, 166, 82, 1);
   static const Color headerBg = Colors.white;
   static const Color bodyBg = Color.fromRGBO(250, 250, 250, 1);
+  static const Color chipBg = Color.fromRGBO(0, 0, 0, 0.08);
 }
 
 class TextColors {
   static const Color primary = Colors.black;
   static const Color secondary = Color.fromRGBO(0, 0, 0, 0.55);
+  static const Color tertiary = Colors.white;
 }
 
 class Fonts {

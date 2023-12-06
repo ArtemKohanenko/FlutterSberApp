@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sber/ChipList.dart';
 import 'package:flutter_sber/ConnectedList.dart';
 import 'package:flutter_sber/OperationList.dart';
 import 'package:flutter_sber/Palette.dart';
@@ -37,6 +38,21 @@ class ProfileTab extends StatelessWidget {
           ),
           const SizedBox(height: 12),
           OperationList(),
+          const SizedBox(height: 46),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const TitleAndSubtitle(
+                  title: 'Интересы',
+                  subtitle: 'Мы подбираем истории и предложения по темам, которые вам нравятся'
+                ),
+                const SizedBox(height: 16),
+                ChipList()
+              ],
+            ),
+          ),
         ],
       ),
     );
