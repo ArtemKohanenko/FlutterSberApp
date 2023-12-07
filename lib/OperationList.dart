@@ -45,8 +45,8 @@ class OperationList extends StatelessWidget {
             padding: EdgeInsets.only(left: 48, bottom: 0, top: 0),
             child: Divider(
               thickness: 1,
-              indent: 20,
-              endIndent: 20
+              indent: 0,
+              endIndent: 0
             ),
           );
         },

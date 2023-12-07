@@ -37,8 +37,7 @@ class MyHomePage extends StatelessWidget {
     return const Scaffold(
           body: SingleChildScrollView(
             child: SizedBox(
-              width: 4000,
-              height: 4000,
+              height: 1200,
               child: Center(
                 child: Column(
                   children: [
